@@ -139,7 +139,7 @@ client.on("message", async message => {
     // Calculates ping between sending a message and editing it, giving a nice round-trip latency.
     // The second ping is an average latency between the bot and the websocket server (one-way, not round-trip)
     const m = await message.channel.send("Help?");
-    m.edit(`Salut, eu am fost creat de ***« ℑ | xJokerFTW »#0957*** \n \n***Comenzi*** \n/serverinfo - Informatii despre server \n/help - Comenzile serverului \n/say - Botul iti scrie mesajul \n/staff - Vezi administratorii serverului \n/ping - Vezi pingul tau \n/salut - Trimite cuiva un salut \n/mass - Trimite un mesaj tuturor (Doar ownerii) \n/ban - Baneaza o persoana \n/kick - Dai kick unei persoane \n/purge - Sterge mesajele`);
+    m.edit(`Salut, eu am fost creat de ***« ℑ | xJokerFTW »#0957*** \n \n***Comenzi*** \n!serverinfo - Informatii despre server \n!help - Comenzile serverului \n!say - Botul iti scrie mesajul \n!staff - Vezi administratorii serverului \n!ping - Vezi pingul tau \n!salut - Trimite cuiva un salut \n!mass - Trimite un mesaj tuturor (Doar ownerii) \n!ban - Baneaza o persoana \n!kick - Dai kick unei persoane \n!purge - Sterge mesajele`);
   }
   
   if(command === "serverinfo") {
