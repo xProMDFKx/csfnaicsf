@@ -183,6 +183,14 @@ message.delete()
 })})}}}
 });
 
+var promise1 = new Promise(function(resolve, reject) {
+  throw 'Uh-oh!';
+});
+
+promise1.catch(function(error) {
+  console.log(error);
+});
+
 client.on("ready", () => {
     console.log("On " + client.guilds.size + " guilds.")
     console.log("With " + client.users.size + " members.")
